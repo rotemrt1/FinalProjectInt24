@@ -49,7 +49,7 @@ public class BuyProductsScenario {
         driver.get("https://www.saucedemo.com/checkout-step-one.html");
         String checkoutStepOne = driver.getCurrentUrl();
 
-        if (checkoutStepOne.equals("htts://www.saucedemo.com/checkout-step-one.html")) {
+        if (checkoutStepOne.equals("https://www.saucedemo.com/checkout-step-one.html")) {
             System.out.println("you are in the checkout-step-One page");
         } else {
             System.out.println("Wrong page");
@@ -74,7 +74,6 @@ public class BuyProductsScenario {
             System.out.println("Order successfully placed");
         } else {
             System.out.println("Wrong page");
-        }
-        driver.quit();
+        } driver.quit();
     }
 }

@@ -28,11 +28,7 @@ public class ValidateStandardUserLogin {
             password.sendKeys("secret_sauce");
             driver.findElement(By.id("login-button")).click();
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             driver.navigate().back();
         }
         System.out.println("All users run successfully");

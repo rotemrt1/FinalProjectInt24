@@ -15,7 +15,6 @@ public class BuyProductsScenario {
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
 
-
         String currentURL = driver.getCurrentUrl();
         if (currentURL.equals("https://www.saucedemo.com/inventory.html")) {
             System.out.println("You've logged in successfully : " + currentURL);
